@@ -135,15 +135,15 @@
     font-weight: 700;
     border-radius: 2px;
     margin-right: 20px;
-     border: 1px solid #FFFFFF; 
-    
+    border: 1px solid #FFFFFF;
+
     transition: 0.3s ease;
 }
 
 .book-now-btn:hover {
     background-color: #ffffff;
     color: #EF5A38;
-     transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 
@@ -221,15 +221,15 @@
     font-size: 14px;
     font-weight: 700;
     display: inline-block;
-   border: 1px solid #FFFFFF; 
-    
+    border: 1px solid #FFFFFF;
+
     transition: 0.3s ease;
 }
 
 .btn-plan:hover {
     background-color: #ffffff;
     color: #EF5A38;
-    transform: translateY(-2px); 
+    transform: translateY(-2px);
 }
 
 
@@ -248,14 +248,14 @@
 }
 
 .exp-left {
-    width: 40%; 
+    width: 40%;
     /* padding-right: 20px */
 }
 
 .exp-center {
-   width: 20%; 
-    display: flex; 
-    justify-content: center; 
+    width: 20%;
+    display: flex;
+    justify-content: center;
 }
 
 .exp-right {
@@ -302,27 +302,27 @@
     color: #FFF;
     line-height: 32px;
     margin-bottom: 45px;
-     padding-right: 50px
+    padding-right: 50px
 }
 
 .btn-orange-tour {
     background-color: #EF5A38;
     color: white;
     text-decoration: none;
-    padding: 16px 40px; 
+    padding: 16px 40px;
     font-weight: 700;
     font-family: 'Jost', sans-serif;
     display: inline-block;
-    letter-spacing: 1px; 
-    text-transform: uppercase; 
-    border: 1px solid #FFFFFF; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
     transition: 0.3s ease;
 }
 
 .btn-orange-tour:hover {
     background-color: #ffffff;
     color: #EF5A38;
-     transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 
@@ -331,7 +331,7 @@
     height: auto;
     filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.8));
     margin-top: -110px;
-        /* margin-right: 118px; */
+    /* margin-right: 118px; */
 
 }
 
@@ -384,13 +384,13 @@
 
 
 .icon-wrap {
-    width: 60px;        
+    width: 60px;
     height: 60px;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -424,24 +424,54 @@
 
 
 
-/* card  renytals */
+/* card  rentalsss */
+
 .rental-options {
     position: relative;
     padding: 0px 0;
- background: linear-gradient(178deg, rgba(0, 22, 38, 0.10) 1.64%, #001626 89.23%),
-        url('images/card-background-img.png') no-repeat;
-    background-size: auto;
+    background-color: #001120;
+    background-image: url('images/card-background-img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
-        background-color: #001120;
+    overflow: hidden;
 }
+
+
+.rental-options::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(180deg,
+            #001120 0%,
+            rgba(0, 17, 32, 0.4) 40%,
+            #001120 100%);
+    z-index: 1;
+}
+
+
+.rental-options .container {
+    position: relative;
+    z-index: 2;
+}
+
 
 .section-title {
     text-align: center;
     font-family: 'Marcellus', serif;
-    font-size: 48px;
+    font-size: 50px;
     margin-bottom: 80px;
     font-weight: 400;
     letter-spacing: 2px;
+    font-style: normal;
+    line-height: 60px;
+    letter-spacing: 2.056px;
+    text-transform: capitalize;
 }
 
 .rental-grid {
@@ -454,13 +484,13 @@
 }
 
 .rental-card {
-    background: #031B30; 
+    background: #031B30;
     border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 40px 30px;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     cursor: pointer;
     text-align: left;
-     border-color: #ffffff;
+    border-color: #ffffff;
 }
 
 .card-img {
@@ -469,22 +499,29 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.card-img img { width: 100%; display: block; }
+.card-img img {
+    width: 100%;
+    display: block;
+}
 
 .card-content h3 {
     font-family: 'Marcellus', serif;
     font-size: 26px;
     margin-bottom: 25px;
-    color: rgba(255, 255, 255, 0.7); 
+    color: rgba(255, 255, 255, 0.7);
     transition: 0.3s;
 }
 
-.card-content ul { list-style: none; margin-bottom: 30px; }
+.card-content ul {
+    list-style: none;
+    margin-bottom: 30px;
+        padding-left: 0rem; 
+}
 
 .card-content ul li {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.6); 
+    color: rgba(255, 255, 255, 0.6);
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -494,7 +531,8 @@
 
 .card-content ul li::before {
     content: "";
-    width: 5px; height: 5px;
+    width: 5px;
+    height: 5px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
 }
@@ -507,7 +545,12 @@
     transition: 0.3s;
 }
 
-.price span { font-size: 26px; font-weight: 500; color: white; margin-left: 5px; }
+.price span {
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+    margin-left: 5px;
+}
 
 .btn-card {
     display: inline-block;
@@ -521,41 +564,48 @@
     transition: all 0.3s ease;
 }
 
-.rental-card:hover, .rental-card.active {
+.rental-card:hover,
+.rental-card.active {
     background: #031B30;
     border-color: #ffffff;
-    transform: translateY(-12px);
+    /* transform: translateY(-12px); */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.rental-card:hover h3, .rental-card.active h3,
-.rental-card:hover li, .rental-card.active li,
+.rental-card:hover h3,
+.rental-card.active h3,
+.rental-card:hover li,
+.rental-card.active li,
 .rental-card:hover .price {
     color: #ffffff !important;
     opacity: 1;
 }
 
-.rental-card:hover ul li::before, .rental-card.active ul li::before {
+.rental-card:hover ul li::before,
+.rental-card.active ul li::before {
     background-color: #ffffff;
 }
 
-.rental-card:hover .btn-card, .rental-card.active .btn-card {
+.rental-card:hover .btn-card,
+.rental-card.active .btn-card {
     background-color: #EF5A38;
     border-color: #EF5A38;
 }
 
-.view-all-container { text-align: center; margin-top: 80px; }
+.view-all-container {
+    text-align: center;
+    margin-top: 80px;
+}
 
 .btn-outline-view {
     display: inline-block;
     padding: 18px 45px;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    background: rgba(255, 255, 255, 0.05);
     color: white;
     text-decoration: none;
     font-family: 'Jost', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 700;
     letter-spacing: 1.5px;
     transition: 0.4s;
 }
@@ -564,10 +614,6 @@
     background: white;
     color: #001626;
 }
-
-
-
-
 
 
 
@@ -584,8 +630,13 @@
     margin: 0 auto;
 }
 
-.rent-left { width: 45%; }
-.rent-right { width: 45%; }
+.rent-left {
+    width: 45%;
+}
+
+.rent-right {
+    width: 45%;
+}
 
 .rent-title {
     font-family: 'Marcellus', serif;
@@ -595,12 +646,16 @@
 }
 
 .split-image-container {
-    width: 100%;
+    width: 20%;
     margin-bottom: 40px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 
 }
-.split-image-container img { width: 100%; display: block; }
+
+.split-image-container img {
+    width: 100%;
+    display: block;
+}
 
 .shared-tour-box {
     background: rgba(255, 255, 255, 0.03);
@@ -614,9 +669,25 @@
     margin-bottom: 20px;
 }
 
-.tour-price { font-size: 18px; margin-bottom: 10px; font-weight: 700; color: #EF5A38; }
-.tour-price span { color: white; font-weight: 400; font-size: 14px; margin-left: 10px; }
-.tour-desc { font-size: 14px; opacity: 0.7; margin-bottom: 30px; }
+.tour-price {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #EF5A38;
+}
+
+.tour-price span {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.tour-desc {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
 
 .btn-shared-orange {
     background-color: #EF5A38;
@@ -629,10 +700,16 @@
     border: 1px solid white;
 }
 
-/* Steps List Logic */
-.intro-text { font-size: 15px; line-height: 1.6; opacity: 0.8; margin-bottom: 50px; }
+.intro-text {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
 
-.steps-container { position: relative; }
+.steps-container {
+    position: relative;
+}
 
 .step-item {
     display: flex;
@@ -641,20 +718,19 @@
     position: relative;
 }
 
-/* Vertical dashed line between numbers */
 .step-item:not(:last-child)::after {
     content: '';
     position: absolute;
     left: 20px;
     top: 50px;
     height: 60px;
-    border-left: 1px dashed rgba(255,255,255,0.3);
+    border-left: 1px dashed rgba(255, 255, 255, 0.3);
 }
 
 .step-num {
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -665,10 +741,9 @@
 
 .step-item.active .step-num {
     border-color: white;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
-/* Step Content Styles */
 .step-info h4 {
     font-family: 'Marcellus', serif;
     font-size: 24px;
@@ -682,7 +757,6 @@
     opacity: 0.7;
 }
 
-/* Active Step Highlight (Last one in image) */
 .step-item.active h4 {
     border: 1px solid white;
     padding: 10px 20px;
