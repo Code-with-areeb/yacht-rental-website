@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+}
+
+.header-wrapper {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+
+.logo-section {
+    width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 29px;
+    margin-left: 65px;
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.logo-section img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 25px;
+}
+
+
+.nav-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.whatsapp-btn {
+    background-color: #27D045;
+    color: white;
+    font-family: 'Jost';
+    padding: 12px 25px;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 1px solid white;
+}
+
+.top-links {
+    margin-right: 110px;
+}
+
+.top-links a {
+    color: white;
+    font-family: 'Jost';
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 0;
+    padding: 0 26px;
+
+
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+
+    display: inline-block;
+    line-height: 1;
+}
+
+
+.top-links a:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+
+/* Main Navbar Row */
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    height: 83px;
+}
+
+.menu-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Jost';
+    letter-spacing: 1px;
+    margin-right: 37px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.menu-links a.active {
+    border-bottom: 1px solid white;
+}
+
+.book-now-btn {
+    background-color: #EF5A38;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 2px;
+    margin-right: 20px;
+     border: 1px solid #FFFFFF; 
+    
+    transition: 0.3s ease;
+}
+
+.book-now-btn:hover {
+    background-color: #ffffff;
+    color: #EF5A38;
+     transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+/* hero section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #001120;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 17, 32, 0.00) 0%, #001120 100%),
+        url('images/hero-background-yacht.png') no-repeat;
+    background-size: auto;
+    background-position: top center;
+    opacity: 0.90;
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 180px 111px 100px 111px;
+}
+
+
+.hero-content {
+    max-width: 750px;
+    margin-bottom: 190px;
+    margin-top: 63px;
+
+}
+
+.hero-content h1 {
+    font-family: 'Marcellus', serif;
+    font-size: 102px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.btn-plan {
+    background-color: #EF5A38;
+    color: white;
+    font-family: 'Jost';
+    text-decoration: none;
+    padding: 18px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+   border: 1px solid #FFFFFF; 
+    
+    transition: 0.3s ease;
+}
+
+.btn-plan:hover {
+    background-color: #ffffff;
+    color: #EF5A38;
+    transform: translateY(-2px); 
+}
+
+
+
+.experience-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+}
+
+.exp-col {
+    position: relative;
+}
+
+.exp-left {
+    width: 40%; 
+    /* padding-right: 20px */
+}
+
+.exp-center {
+   width: 20%; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.exp-right {
+    width: 42%;
+}
+
+.badge-text {
+    border: 1.5px solid white;
+
+    background: rgba(255, 255, 255, 0.20);
+
+    padding: 6px 14px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-family: 'Marcellus', sans-serif;
+    color: white;
+}
+
+.main-title {
+    font-family: 'Marcellus', serif;
+    font-size: 50px;
+    font-weight: 400px;
+    color: #FFF;
+    font-style: normal;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.sub-title {
+    font-family: 'Jost', sans-serif;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.para-text {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 400px;
+    color: #FFF;
+    line-height: 32px;
+    margin-bottom: 45px;
+     padding-right: 50px
+}
+
+.btn-orange-tour {
+    background-color: #EF5A38;
+    color: white;
+    text-decoration: none;
+    padding: 16px 40px; 
+    font-weight: 700;
+    font-family: 'Jost', sans-serif;
+    display: inline-block;
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    border: 1px solid #FFFFFF; 
+    transition: 0.3s ease;
+}
+
+.btn-orange-tour:hover {
+    background-color: #ffffff;
+    color: #EF5A38;
+     transform: translateY(-2px);
+}
+
+
+.floating-boat {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.8));
+    margin-top: -110px;
+        /* margin-right: 118px; */
+
+}
+
+.video-container {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+}
+
+.video-container img {
+    width: 100%;
+    display: block;
+}
+
+.play-trigger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('icons/player-icon-vector.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 5;
+    transition: transform 0.3s ease;
+}
+
+.play-trigger:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.feat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.icon-wrap {
+    width: 60px;        
+    height: 60px;
+    margin-bottom: 25px; 
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.icon-wrap img {
+    /* width: 100%; */
+    height: auto;
+    object-fit: contain;
+}
+
+
+.feat-card h5 {
+    color: #FFF;
+    font-family: 'Marcellus', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.feat-card p {
+    color: #FFF;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400px;
+    font-size: 10px;
+    line-height: 1.5;
+    opacity: 0.6;
+
+}
+
+
+
+
+/* card  renytals */
+.rental-options {
+    position: relative;
+    padding: 0px 0;
+ background: linear-gradient(178deg, rgba(0, 22, 38, 0.10) 1.64%, #001626 89.23%),
+        url('images/card-background-img.png') no-repeat;
+    background-size: auto;
+    color: white;
+        background-color: #001120;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Marcellus', serif;
+    font-size: 48px;
+    margin-bottom: 80px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.rental-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.rental-card {
+    background: #031B30; 
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 40px 30px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    text-align: left;
+     border-color: #ffffff;
+}
+
+.card-img {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-img img { width: 100%; display: block; }
+
+.card-content h3 {
+    font-family: 'Marcellus', serif;
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.7); 
+    transition: 0.3s;
+}
+
+.card-content ul { list-style: none; margin-bottom: 30px; }
+
+.card-content ul li {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6); 
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.card-content ul li::before {
+    content: "";
+    width: 5px; height: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+}
+
+.price {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 35px;
+    transition: 0.3s;
+}
+
+.price span { font-size: 26px; font-weight: 500; color: white; margin-left: 5px; }
+
+.btn-card {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: white;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.rental-card:hover, .rental-card.active {
+    background: #031B30;
+    border-color: #ffffff;
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.rental-card:hover h3, .rental-card.active h3,
+.rental-card:hover li, .rental-card.active li,
+.rental-card:hover .price {
+    color: #ffffff !important;
+    opacity: 1;
+}
+
+.rental-card:hover ul li::before, .rental-card.active ul li::before {
+    background-color: #ffffff;
+}
+
+.rental-card:hover .btn-card, .rental-card.active .btn-card {
+    background-color: #EF5A38;
+    border-color: #EF5A38;
+}
+
+.view-all-container { text-align: center; margin-top: 80px; }
+
+.btn-outline-view {
+    display: inline-block;
+    padding: 18px 45px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    transition: 0.4s;
+}
+
+.btn-outline-view:hover {
+    background: white;
+    color: #001626;
+}
+
+
+
+
+
+
+
+.how-to-rent {
+    padding: 100px 0;
+    color: white;
+}
+
+.rent-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.rent-left { width: 45%; }
+.rent-right { width: 45%; }
+
+.rent-title {
+    font-family: 'Marcellus', serif;
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+}
+
+.split-image-container {
+    width: 100%;
+    margin-bottom: 40px;
+    border: 1px solid rgba(255,255,255,0.1);
+
+}
+.split-image-container img { width: 100%; display: block; }
+
+.shared-tour-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+}
+
+.shared-tour-box h3 {
+    font-family: 'Marcellus', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.tour-price { font-size: 18px; margin-bottom: 10px; font-weight: 700; color: #EF5A38; }
+.tour-price span { color: white; font-weight: 400; font-size: 14px; margin-left: 10px; }
+.tour-desc { font-size: 14px; opacity: 0.7; margin-bottom: 30px; }
+
+.btn-shared-orange {
+    background-color: #EF5A38;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+/* Steps List Logic */
+.intro-text { font-size: 15px; line-height: 1.6; opacity: 0.8; margin-bottom: 50px; }
+
+.steps-container { position: relative; }
+
+.step-item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Vertical dashed line between numbers */
+.step-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    height: 60px;
+    border-left: 1px dashed rgba(255,255,255,0.3);
+}
+
+.step-num {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.step-item.active .step-num {
+    border-color: white;
+    background: rgba(255,255,255,0.1);
+}
+
+/* Step Content Styles */
+.step-info h4 {
+    font-family: 'Marcellus', serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.step-info p {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+
+/* Active Step Highlight (Last one in image) */
+.step-item.active h4 {
+    border: 1px solid white;
+    padding: 10px 20px;
+    display: inline-block;
+}
